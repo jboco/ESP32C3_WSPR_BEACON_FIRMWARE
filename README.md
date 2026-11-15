@@ -1,7 +1,7 @@
  
 # ESP32-C3 WSPR Beacon Firmware
 
-This firmware features exact UTC time synchronization via GPS, millihertz-level RF frequency control using an **Si5351** clock generator, and automated RF path routing/band switching controlled by a **PCF8574** I2C GPIO extender driving an external RF switch matrix[cite: 1].
+This firmware features exact UTC time synchronization via GPS, millihertz-level RF frequency control using an **Si5351** clock generator, and automated RF path routing/band switching controlled by a **PCF8574** I2C GPIO extender driving an external FET switch matrix.
 
 ---
 
@@ -49,3 +49,5 @@ Before flashing, update your station details at the top of `main/main_multiband.
 #define GRID_SQUARE     "FM19"      // 4-character Maidenhead Grid Square
 #define POWER_DBM       23          // Transmit power in dBm (23 dBm = ~200mW)
 #define XTAL_FREQ_HZ    25000000ULL // Si5351 Crystal Frequency (25MHz or 27MHz)
+
+📘 **[Download the Complete User Manual (PDF)](./USER_MANUAL.pdf)**
